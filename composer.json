@@ -1,0 +1,52 @@
+{
+    "name": "xiaochu/windphp",
+    "type": "library",
+    "description": ":package_description",
+    "keywords": [
+        "xiaochu",
+        "windphp"
+    ],
+    "homepage": "https://github.com/xiaochu/windphp",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xiaochu",
+            "email": "newi@qq.com",
+            "homepage": "http://www.windphp.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^5.4 || ^7.0",
+        "psr/http-message": "~1.0",
+        "zendframework/zend-diactoros": "^1.3"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Wind\\Routing\\": "src/Routing"
+        },
+        "files": [
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            ":vendor\\:package_name\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
